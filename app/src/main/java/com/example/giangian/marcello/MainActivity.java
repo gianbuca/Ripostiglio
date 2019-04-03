@@ -1,9 +1,14 @@
 package com.example.giangian.marcello;
 
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
-import android.content.Intent;cd
+import android.content.Intent;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.content.Context;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,5 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void changeActivity(android.view.View a){
         startActivity(new Intent(MainActivity.this,SecondActivity.class));
+    }
+
+    public void PushNotification(Image a, String b){
+        NotificationManager NM;
+        NM=(NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+
     }
 }
