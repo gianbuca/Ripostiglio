@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">marcello</string>
+    <string name="delete_button_2A">cancelllla</string>
+    <string name="cancella">cancella</string>
+    <string name="home">home</string>
+    <string name="scrivi_qui">scrivi qui...</string>
+    <string name="send">Send</string>
+    <string name="next">next</string>
+</resources>
