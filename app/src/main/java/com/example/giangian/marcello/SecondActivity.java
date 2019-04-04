@@ -21,7 +21,6 @@ public class SecondActivity extends AppCompatActivity {
         output.setText("");
     }
 
-
     public void back(android.view.View c){
         startActivity(new Intent(SecondActivity.this,MainActivity.class));
     }
