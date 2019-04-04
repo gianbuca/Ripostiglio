@@ -16,15 +16,15 @@
         android:layout_marginEnd="70dp"
         android:layout_marginRight="70dp"
         android:layout_marginBottom="324dp"
+        android:autofillHints=""
+        android:hint="@string/scrivi_qui"
         android:inputType="text"
-        android:text="@string/scrivi_qui"
         app:fontFamily="casual"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cancellaOutput"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/cancellaOutput" />
 
 
 

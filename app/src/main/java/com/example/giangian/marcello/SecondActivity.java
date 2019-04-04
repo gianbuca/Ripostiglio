@@ -14,6 +14,7 @@ public class SecondActivity extends AppCompatActivity {
         Intent i = getIntent();
         TextView output=(TextView) findViewById(R.id.textOutput);
         output.setText(i.getStringExtra("messaggio"));
+
     }
 
     public void cancella(android.view.View b){
