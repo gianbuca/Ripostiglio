@@ -36,10 +36,6 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Messaggio inviato", Toast.LENGTH_LONG).show();
     }
 
-    public void changeActivity(android.view.View a){
-        startActivity(new Intent(MainActivity.this,SecondActivity.class));
-    }
-
     public void Notification(int img, String title, String content, Intent i){
         PendingIntent pi=PendingIntent.getActivity(this, 0, i, PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder mBuilder= new NotificationCompat.Builder(this);
@@ -67,9 +63,7 @@ public class MainActivity extends AppCompatActivity {
         switch(id)
         {
             case R.id.MENU_1:
-			/*
-			 	Codice di gestione della voce MENU_1
-			 */
+                startActivity(new Intent(MainActivity.this, ListActivity.class));
                 break;
             //case R.id.MENU_2:
 			/*
