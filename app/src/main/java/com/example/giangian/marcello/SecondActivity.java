@@ -2,8 +2,10 @@ package com.example.giangian.marcello;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.TextView;
 import android.content.Intent;
+
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -15,6 +17,8 @@ public class SecondActivity extends AppCompatActivity {
         TextView output=(TextView) findViewById(R.id.textOutput);
         output.setText(i.getStringExtra("messaggio"));
 
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void cancella(android.view.View b){
@@ -22,7 +26,12 @@ public class SecondActivity extends AppCompatActivity {
         output.setText("");
     }
 
-    public void back(android.view.View c){
-        startActivity(new Intent(SecondActivity.this,MainActivity.class));
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id=item.getItemId();
+        if(id==android.R.id.home){
+            this.finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
