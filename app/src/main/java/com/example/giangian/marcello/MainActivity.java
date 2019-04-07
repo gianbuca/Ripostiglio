@@ -63,7 +63,10 @@ public class MainActivity extends AppCompatActivity {
         switch(id)
         {
             case R.id.MENU_1:
-                startActivity(new Intent(MainActivity.this, ListActivity.class));
+                String [] array={""};
+                Intent newIntent=new Intent(MainActivity.this, ListActivity.class);
+                newIntent.putExtra("StringArray",array);
+                startActivity(newIntent);
                 break;
             //case R.id.MENU_2:
 			/*
